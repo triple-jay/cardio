@@ -24,6 +24,7 @@ On our best model, the __random forest__, we performed cross validation and foun
 #### Further optimization and results
 The random forest comes with a very useful feature, which shows us the importance of the different features of the dataset on determining the model itself. We dropped the features of lowest importance, which we found were not important to the random forest and would most likely create unhelpful noise in the dataset and create unnecessary variance. We found that the gender of the patient, as well as the binary variables determining if the patient smoked or drank alcohol, were not adding much information to the classifier. We dropped these features. Running a cross validation on the random forest again, we found this raised our accuracy to __73.4%__, a minor improvement.
 
+
 Using our three best models, the decision tree, random forest, and logistic regression, we ran a voting classifier to see if this would improve our overal score. We achieved an accuracy of __73.5%__ on cross validation, which turned out to be our best score.
 
 Through our data visualizations, we found that the most important factors for cardiovascular disease were cholesterol, blood pressure levels, and age. These results were fairly consistent with our hypothesis. 
